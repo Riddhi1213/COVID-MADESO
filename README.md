@@ -22,4 +22,3 @@ It will detect that two or more persons in a single frame are walking with maint
     * https://pjreddie.com/media/files/yolov3-tiny.weights
 
 
-* Analysis is done using Bernoulli Naive Bayes algorithm and Flask is used for GUI.
