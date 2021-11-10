@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title>Social Distancing Analyzer</title>
+    <style>
+    img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%
+    }
+
+    h1{
+    color: whitesmoke;
+    background-color: rgba(0,0,0,0.9);
+    padding:10px 20px;
+    width: 100%;
+  }
+
+  a {
+    vertical-align: middle;
+    display: block;
+    border:2px solid grey;
+    border-radius: 5px;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1.15em;
+  }
+
+  .button,.button:visited {
+  text-decoration: none;
+  color: white;
+  outline: none;
+  border: none;
+}
+
+.button {
+  display: block;
+  padding: 16px;
+  margin: 0px 0px 10px 0px;
+  font-weight: 600;
+  text-align: center;
+  color: #FFFfff;
+  transition: all 0.2s ;
+  background: black;
+}
+.button:hover {
+  
+}
+
+    </style>   </head>   <body style="background-image: url({{
+url_for('static', filename='bg2.png') }}); background-size: 100% 100%">     
+
+<a style="float: left;border-right: 2px solid dimgrey;" class="button" href="{{ url_for('index') }}">HOME</a>    
+ <a style="float: right;border-left: 2px solid dimgrey;" class="button" href="{{ url_for('thanks') }}">EXIT</a>
+
+<h1 align="center">Social Distancing Analyzer</h1> 
+{% if filename %}
+    <img id="bg" class="center" src="{{ url_for('dist_video_feed', filename=filename) }}">
+
+{% endif %}
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Covid MADESO</title>
+    <style>
+
+  body {
+    vertical-align: middle;
+    font-family: Roboto;
+  }
+
+  .d1{
+    border-radius: 30px;
+    vertical-align: middle;
+    height: 80%;
+    margin: 5%;
+    background-color: rgba(255,255,255,0.6);/*rgba(98,186,236,1);*/
+    align-content: middle;
+    display: table;
+    width:70%;
+  }
+
+.d2{
+  border-radius: 30px;
+  vertical-align: middle;
+  margin: auto;
+  display: table-cell;
+  background-size:100% 100%; 
+  background-image:  url({{ url_for('static', filename='th2.jpg') }});
+}
+  h1{
+    font-size: 5em;
+    color: teal;
+  }
+
+
+    </style>
+  </head>
+  <body style="background-image: url({{ url_for('static', filename='bg2.png') }}); background-size: 100% 100%">
+    <center><div class="d1">
+      <div class="d2"><br>
+    </div></div></center>
+</body>
+</html>
