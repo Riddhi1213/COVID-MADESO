@@ -14,4 +14,12 @@ This platform perceives if a person does/doesn’t wear a mask. The application 
 It will detect that two or more persons in a single frame are walking with maintain social distancing. 
 
 
+### Installation
+* To run the project, clone the project,
+* Install the packages in requirements.txt
+* Download the following files and place it under the folder dist_files:
+    * https://github.com/pjreddie/darknet/blob/master/cfg/yolov3-tiny.cfg
+    * https://pjreddie.com/media/files/yolov3-tiny.weights
+
+
 * Analysis is done using Bernoulli Naive Bayes algorithm and Flask is used for GUI.
