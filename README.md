@@ -7,6 +7,8 @@ Our main motive, Face mask detection with Social Distancing is the task of ident
 * So in this era of automation and artificial intelligence we decided to come up with a project that is going to automate the process of desired detection detection using open CV and deep learning.
 
 
+<img src="cm.gif"  width="800" height="500"/>
+
 ### Features
 - Face Mask Detection 
 This platform perceives if a person does/doesn’t wear a mask. The application can be associated with any cameras. 
